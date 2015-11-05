@@ -1,0 +1,1 @@
+insert into users (user_name,password,role) values('user','user','ROLE_USER'),('admin','admin','ROLE_ADMIN');
