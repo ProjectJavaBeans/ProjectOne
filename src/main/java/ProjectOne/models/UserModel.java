@@ -7,9 +7,14 @@ import java.io.Serializable;
  * Created by Ohlaph on 11/1/2015.
  */
 @Entity
+@Table(name="users")
 public class UserModel implements Serializable {
 
-    private String username;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 8133150339090927424L;
+	private String userName;
     private String password;
     private String role;
 
@@ -42,11 +47,11 @@ public class UserModel implements Serializable {
         this.password = password;
     }
 
-    public String getUsername() {
-        return username;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setUserName(String username) {
+        this.userName = username;
     }
 }
